@@ -37,3 +37,9 @@ The two first hypothesys forces us into two ways of determining if a puzzle is n
 - [Big O Cheatsheet](https://www.bigocheatsheet.com/) by several contributors
 - [Algorithmic CheatSheet](https://sinon.org/algorithms/) by Sinon.org
 - [The Algorithms](https://the-algorithms.com) by several contributors
+
+# After coding conclussions
+
+Turns out that I really need a dive into data structures, algorithms and OOP, as the script is very inefficient at solving problems. You can use *time* in bash to check, but it takes minutes to solve simple puzzles.
+
+It was perhaps more in the +30h time sink (didn't track it honestly), but mostly because I've got confused with some n00b bugs that came from not realizing that I was referencing lists instead of copying them, etc.
