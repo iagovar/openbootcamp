@@ -306,4 +306,3 @@ def formatValues(orderedNodeValues):
 		orderedStringValues.append(tempWidth)
 
 	return orderedStringValues
-
