@@ -11,7 +11,7 @@ structure, and chooses the earliest solution.
 import copy
 from utils import *
 
-# Gloval vars & structures
+# Gloval vars & structures (I know, I know!)
 
 SOLVED = [False, None] # Is it solved?, What's the index of the final step matching the goal?
 
@@ -58,16 +58,9 @@ def solveCardsPuzzle(inputArray):
 			SOLVED[1] = isThereMatch[1]
 			break
 
-		#DEBUG
-		#print("Match result " + str(isThereMatch))
-
 		# Exploring possible states from previous ones
 		for thisBatchIndex in lastBatchIndexes:
 			tempMoveList = possibleStates(STATES[thisBatchIndex]["nodeValue"])
-
-			#DEBUG
-			#print("Prueba  " + str(lastBatchIndexes))
-			#print("Batch loop " + str(thisBatchIndex))
 
 			# Storing new obtained states
 			for thisMove in tempMoveList:
@@ -84,9 +77,6 @@ def solveCardsPuzzle(inputArray):
 						# not wet your blankets with len(someHugeList)
 					tempMoveDictIndex = len(STATES) -1
 					tempBatchIndexes.append(tempMoveDictIndex)
-					#DEBUG
-					#print("Storing " + str(thisMove) + " with index " + str(tempMoveDictIndex))
-					#input("Press a key")
 
 		# Temporal batch indexes substitutes last batch indexes
 		# So we can interate all over again
