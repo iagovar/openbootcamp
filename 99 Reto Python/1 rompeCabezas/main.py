@@ -10,13 +10,22 @@ structure, and chooses the earliest solution.
 """
 import copy
 from utils import *
+from costfn import *
 
 # Gloval vars & structures (I know, I know!)
 
-SOLVED = [False, None] # Is it solved?, What's the index of the final step matching the goal?
+	# Is it solved?, What's the index of the final step matching the goal?
 
-STATES = [] # list of dictionaries {nodeValue, parentIndex}
+SOLVED = [False, None]
+
+STATES = [] # list of dictionaries {nodeValue: [list/array], parentIndex: int}
 GOAL_STATE = []
+
+	# Turns on/off the cost fn (based on manhattan distance) to free memory up.
+	# This cost fn could avoid the shortest path to GOAL, so it's a trade-off.
+
+COST_FN = False
+				
 
 def solveCardsPuzzle(inputArray):
 
@@ -82,6 +91,11 @@ def solveCardsPuzzle(inputArray):
 		# So we can interate all over again
 		lastBatchIndexes = copy.deepcopy(tempBatchIndexes)
 
+		# Freeing up memory in case of COST_FN = True
+		if COST_FN == True:
+			if len(STATES) > 1000:
+				deleteWeakBranches(GOAL_STATE, STATES, lastBatchIndexes)
+
 		
 	# Building the output string
 
@@ -90,7 +104,7 @@ def solveCardsPuzzle(inputArray):
 
 	return outputString
 
-toPrint = solveCardsPuzzle([[1,2,3,4],[5,6,7,8],[9,0,11,12],[13,10,14,15]])
+toPrint = solveCardsPuzzle([[2,3,8],[1,4,5],[7,6,0]])
 
 print(toPrint)
 
