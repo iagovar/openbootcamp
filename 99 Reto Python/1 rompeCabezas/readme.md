@@ -50,6 +50,10 @@ Because the initial script was slow, I thought a manhattan type cost function ma
 
 My initial idea was to determine the distance between a given state and the goal state every N iterations, decide which are not necessary (have a greater distance vs the goal state) and delete all the junk from memory, so my poor laptop can loop it quick.
 
-But deleting stuff from lists changes the indexes of all other elements. If you want to fix this you get into stuff that rally adds a performance penalization, when the initial point was to avoid such penalization, so in the end evens out and it's not worth it.
+But deleting stuff from lists changes the indexes of all other elements. If you want to fix this you get into stuff that really adds a performance penalization, when the initial point was to avoid such penalization, so in the end evens out and it's not worth it.
 
 Then I thought that I could set some states to None value, avoiding such shuffling indexes mess, but it doesn't save that much memory and it also caused some troubles down the line with the logic. Because of the above mentioned constrainst I decided to not sink more time in it, and be done with it.
+
+So in the end, the cost function computes the distances of a batch every N iterations, leaves out half batch, computes possible states with the other half and the loop goes on.
+
+Such operation can be avoided setting COST_FN to False in main.py
