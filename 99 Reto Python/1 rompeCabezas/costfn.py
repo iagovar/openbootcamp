@@ -20,23 +20,35 @@ def deleteWeakBranches(GOAL_STATE, STATES, lastBatchIndexes):
 	"""
 	Main fn of the cost function. Orchestrates all
 	other functions.
+
+	It also returns a replacement for lastBatchIndexes.
 	"""
 
 	# Getting the distances of current batch
 	distancesListOfDict = getDistances(GOAL_STATE, STATES, lastBatchIndexes)
 
 	# Finding the best performer branch
-	# (so listing all worse performers for delete)
+	# (so listing all worse performers for saving/deleting)
 
-	branchesToSave = getWeakBranches(distancesListOfDict)
+	branchesToSave, branchesToDelete = getGoodAndBadBranches(distancesListOfDict)
 
-	# Recursively delete all entries in STATES from
+
+	"""
+	TODO: Inplementing this was a PITA, deleting indexes changes all other
+	references in the list and setting them to none broke the logic
+	somewhere else. Sadly I don't have time right now to debug this. I sinked
+	about 12 hours of effective time without fixing it.
+
+	Se we have to get along without nukeWeakBranches()
+	"""
+	# Recursively set to None all entries in STATES from
 	# weak branches except for the initial entry
 
-	nukeWeakBranches(STATES, branchesToSave)
+	# nukeWeakBranches(STATES, branchesToSave)
 
-	# Nothing to return, just be happy and enjoy life
-	# out of the screen.
+	# Return branchesToSave, will be used as lastBatchIndexes
+
+	return branchesToSave
 
 
 def getDistances(GOAL_STATE, STATES, lastBatchIndexes):
@@ -125,7 +137,7 @@ def getDistances(GOAL_STATE, STATES, lastBatchIndexes):
 	return statePositions
 
 
-def getWeakBranches(distancesListOfDict):
+def getGoodAndBadBranches(distancesListOfDict):
 	"""
 	Expects a list of dictionaries like this:
 	
@@ -142,18 +154,26 @@ def getWeakBranches(distancesListOfDict):
 	integers.
 	"""
 
+	lenInputList = len(distancesListOfDict)
+
+	if lenInputList % 2 != 0:
+		raise("Descartable/Salvable list in costfn % 2 != 0")
+
 	distancesListOfDict.sort(key=lambda e: e["distance"])
 
-	halfList = round(len(distancesListOfDict)/2)
+	halfList = lenInputList/2
 
 	branchesToSave = []
+	branchesToDelete = []
 
 	for i in range(len(distancesListOfDict)):
+		thisIndex = distancesListOfDict[i]["index"]
 		if i < halfList:
-			thisIndex = distancesListOfDict[i]["index"]
 			branchesToSave.append(thisIndex)
+		else:
+			branchesToDelete.append(thisIndex)
 
-	return branchesToSave
+	return branchesToSave, branchesToDelete
 
 
 def nukeWeakBranches(STATES, branchesToSave):
@@ -182,19 +202,13 @@ def nukeWeakBranches(STATES, branchesToSave):
 	# shouln't be a problem for such large data structure.
 
 	statesLen = len(STATES)
-	print("La longitud del índice es " + str(statesLen))
-	input("presiona una tecla")
 
-	for i in range(statesLen):
+	for i in reversed(range(statesLen)):
 		if i not in neededIndexes:
-			try: 
-				print("indice " + str(i) + " NO está en los necesarios")
-				print("Global es  es " + str(STATES[i]) + "\n")
-				del STATES[i]
-			except:
-				pass
-		print("indice " + str(i) + " SÍ está en los necesarios")
+			STATES[i] = None
+			# Previous method: delete STATES[i]
 
 	# this should be done auto on scope out, but somehow
 	# it doesn't sometimes ¿? so adding manually.
+
 	del neededIndexes

@@ -24,7 +24,7 @@ GOAL_STATE = []
 	# Turns on/off the cost fn (based on manhattan distance) to free memory up.
 	# This cost fn could avoid the shortest path to GOAL, so it's a trade-off.
 
-COST_FN = False
+COST_FN = True
 				
 
 def solveCardsPuzzle(inputArray):
@@ -93,8 +93,10 @@ def solveCardsPuzzle(inputArray):
 
 		# Freeing up memory in case of COST_FN = True
 		if COST_FN == True:
-			if len(STATES) > 1000:
-				deleteWeakBranches(GOAL_STATE, STATES, lastBatchIndexes)
+			thisLen = len(lastBatchIndexes)
+			divisibleByTwo = thisLen % 2
+			if thisLen > 100 and divisibleByTwo == 0:
+				lastBatchIndexes = deleteWeakBranches(GOAL_STATE, STATES, lastBatchIndexes)
 
 		
 	# Building the output string
@@ -104,7 +106,17 @@ def solveCardsPuzzle(inputArray):
 
 	return outputString
 
-toPrint = solveCardsPuzzle([[2,3,8],[1,4,5],[7,6,0]])
+defaultPuzzle = [[2,3,8],[1,4,5],[7,6,0]]
+print("Please, set an input Puzzle or leave it empty for default.")
+print("Defaul Puzzle: " + str(defaultPuzzle))
+userInput = input()
+
+if len(userInput) > 0:
+	inputToSolve = userInput
+else:
+	inputToSolve = defaultPuzzle
+
+toPrint = solveCardsPuzzle(inputToSolve)
 
 print(toPrint)
 

@@ -133,9 +133,29 @@ def testGetDistances():
 					{"index": 12, "distance": 0}
 					]
 
-	assert getDistances(GOAL_STATE, STATES, lastBatchIndexes) == validResponse
+	storedRespone = getDistances(GOAL_STATE, STATES, lastBatchIndexes)
 
+	assert storedRespone == validResponse
 
+"""
+def testGetGoodAndBadBranches():
+
+	validResponse = [
+					{"index": 0, "distance": 10},
+					{"index": 1, "distance": 12},
+					{"index": 2, "distance": 12},
+					{"index": 3, "distance": 12},
+					{"index": 4, "distance": 12},
+					{"index": 5, "distance": 10},
+					{"index": 6, "distance": 8},
+					{"index": 7, "distance": 6},
+					{"index": 8, "distance": 4},
+					{"index": 9, "distance": 4},
+					{"index": 10, "distance": 4},
+					{"index": 11, "distance": 2},
+					{"index": 12, "distance": 0}
+					]
+"""
 
 
 # TODO

@@ -180,9 +180,12 @@ def getMatch(STATES, GOAL_STATE, lastBatchIndexes): # TODO TEST
 	"""
 
 	for index in lastBatchIndexes:
-		valueToCheck = STATES[index]["nodeValue"]
-		if valueToCheck == GOAL_STATE:
-			return [True, index]
+		try:
+			valueToCheck = STATES[index]["nodeValue"]
+			if valueToCheck == GOAL_STATE:
+				return [True, index]
+		except:
+			print("Falló con valor: " + str(index))
 
 	return [False, None]
 
