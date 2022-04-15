@@ -12,8 +12,7 @@ public class Main {
     Llamar a la función en el main y darle valores..
     */
     float resultado = sumArbitraryParams(20,20,20);
-    System.out.println("El resultado de la suma de parámetros es:");
-    System.out.println(resultado);
+    System.out.println("El resultado de la suma de parámetros es: " + resultado);
 
     /*
     Segunda parte.
@@ -28,7 +27,7 @@ public class Main {
 
     Coche miCoche = new Coche();
     miCoche.incrementarPuertas(2);
-    System.out.println("El número de puertas es" + miCoche.puertasCoche);
+    System.out.println("El número de puertas es " + miCoche.puertasCoche);
 
   }
 }
@@ -38,7 +37,7 @@ public class Coche {
 
   int puertasCoche = 5;
 
-  public static void incrementarPuertas(int masPuertas) {
+  public void incrementarPuertas(int masPuertas) {
     this.puertasCoche += masPuertas;
   }
 
