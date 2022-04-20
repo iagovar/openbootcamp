@@ -17,16 +17,16 @@ class Main {
 		// Mostramos toda la vaina
 		System.out.println(
 			"Nuestro cliente se llama " + fulanito.nombre
-			+ ", tiene " + fulanito.edad
-			+ ", su teléfono es " + fulanito.telefono
-			+ " y su crédito es " + fulanito.getCredito()
+			+ ", tiene " 				+ fulanito.edad
+			+ ", su teléfono es " 		+ fulanito.telefono
+			+ " y su crédito es " 		+ fulanito.getCredito()
 			);
 
 		System.out.println(
-			"Nuestro Trabajador se llama " + menganito.nombre
-			+ ", tiene " + menganito.edad
-			+ ", su teléfono es " + menganito.telefono
-			+ " y su salario es " + menganito.getSalario()
+			"Nuestro Trabajador se llama " 	+ menganito.nombre
+			+ ", tiene " 					+ menganito.edad
+			+ ", su teléfono es " 			+ menganito.telefono
+			+ " y su salario es " 			+ menganito.getSalario()
 			);
 		
 	}
