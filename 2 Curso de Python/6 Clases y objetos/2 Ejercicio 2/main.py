@@ -20,10 +20,15 @@ class Alumno:
         print(f"Se ha introducido el alumno {self.nombre} con la nota {self.nota}")
 
 
-# Inicializamos el alumno
-miAlumno = Alumno("Fulanito", 6.75)
-miAlumno.mostrarDatos()
-print(miAlumno.esAprobado())
+def main():
+    # Inicializamos el alumno
+    miAlumno = Alumno("Fulanito", 6.75)
+    miAlumno.mostrarDatos()
+    print(miAlumno.esAprobado())
+
+
+if __name__ == "__main__":
+    main()
 
 
 
