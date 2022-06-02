@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Índice de la app</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    {% include "polls/estaticos.html" %}
+</head>
+<body>
+{% if latest_question_list %}
+    <ul>
+    {% comment %}
+
+    Podemos hacer las URLs semi-hardcoded tipo:
+    <a href="/polls/{{ question.id }}/"></a>
+    O dinámicas con un lookup a urls.py y definirlas allí para
+    no tener que cambiar las plantillas:
+    {% url 'polls:detail' question.id %}
+
+    {% endcomment %}
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</body>
+</html>

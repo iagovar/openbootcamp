@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+a,
+a:visited {color: gold;}
+a:hover {color: aqua;}
