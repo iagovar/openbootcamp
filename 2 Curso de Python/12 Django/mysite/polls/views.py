@@ -23,6 +23,10 @@ def index(request):
     context = {
         'latest_question_list': latest_question_list,
     }
+    print("### Pintando el argumento request de la función")
+    print(request)
+    print(type(request))
+    print("### Finalizando el pintado de request")
     return HttpResponse(template.render(context, request))
 
 def detail(request, question_id):
@@ -35,7 +39,7 @@ def detail(request, question_id):
     try:
         question = Question.objects.get(pk=question_id)
     except Question.DoesNotExist:
-        raise Http404("Question does not exist, te enteras?")
+        raise Http404("Question does not exist buddy")
     return render(request, 'polls/detail.html', {'question': question})
 
 def vote(request, question_id):
