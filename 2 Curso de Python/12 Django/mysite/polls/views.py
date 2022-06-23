@@ -23,10 +23,7 @@ def index(request):
     context = {
         'latest_question_list': latest_question_list,
     }
-    print("### Pintando el argumento request de la función")
-    print(request)
-    print(type(request))
-    print("### Finalizando el pintado de request")
+
     return HttpResponse(template.render(context, request))
 
 def detail(request, question_id):

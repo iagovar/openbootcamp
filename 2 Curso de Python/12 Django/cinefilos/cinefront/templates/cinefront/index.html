@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice</title>
+</head>
+<body>
+    <container>
+        <h3>Mostrando hasta 5 Ítems</h3>
+        <ul>
+        {% for pelicula in listaPelis %}
+            <li>{{pelicula}} - {{pelicula.director}}, {{pelicula.lanzamiento|date:'Y'}} | <a href="pelicula/{{pelicula.id}}">Ver detalle</a></li>
+        {% endfor %}
+        </ul>
+        <a href="/pelis/{{previousPage}}">Página Anterior</a> | <a href="/pelis/{{nextPage}}">Página Siguiente</a>
+    </container>
+</body>
+</html>

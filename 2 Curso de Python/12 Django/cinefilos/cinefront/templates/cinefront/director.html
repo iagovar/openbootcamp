@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director</title>
+</head>
+<body>
+    <container>
+        {% for director in listadirector %}
+        <ul>
+            <h2>Datos del Director</h2>
+            <li>Nombre: {{director.nombre}}</li>
+            <li>Nacimiento: {{director.nacimiento}}</li>
+            <li>Nacionalidad: {{director.nacionalidad}}</li>
+            <hr>
+            <h2>Biografía</h2>
+            <p>{{director.biografia}}</p>
+        </ul>
+        {% endfor %}
+        <ul>
+        <h2>Películas en las que ha participado</h2>
+        {% for pelicula in listaPelis %}
+            <li>{{pelicula}} - {{pelicula.lanzamiento|date:'Y'}} | <a href="../../pelicula/{{pelicula.id}}">Ver detalle</a></li>
+        {% endfor %}
+         </ul>
+    </container>
+</body>
+</html>

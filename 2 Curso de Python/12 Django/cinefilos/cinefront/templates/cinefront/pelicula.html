@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Película</title>
+</head>
+<body>
+    <container>
+        {% for pelicula in listaPeli %}
+        <ul>
+        <h2>Datos de la película</h2>
+            <li>Nombre: {{pelicula}}</li>
+            <li>Director: <a href="../../director/{{pelicula.director_id}}">{{pelicula.director}}</a></li>
+            <li>Fecha de lanzamiento:{{pelicula.lanzamiento}}</li>
+            <li>Duración: {{pelicula.duracion}}</li>
+        <hr>
+        <h2>Resumen de la película</h2>
+            <p>{{pelicula.resumen}}</p>
+        </ul>
+        {% endfor %}
+    </container>
+</body>
+</html>

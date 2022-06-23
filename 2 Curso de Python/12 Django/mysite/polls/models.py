@@ -33,7 +33,7 @@ class Question(models.Model):
         """
         La lógica de definir este método se puede leer aquí: https://stackoverflow.com/questions/45483417/what-is-doing-str-function-in-django
 
-        Básicamente ya hay un método __str__ en modes.Model que sobreescribismo, porque
+        Básicamente ya hay un método __str__ en modeLs.Model que sobreescribismo, porque
         el que viene por defecto simplemente lista el número de objetos..
         """
         return self.question_text
