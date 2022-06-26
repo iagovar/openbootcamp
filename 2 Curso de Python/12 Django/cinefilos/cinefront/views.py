@@ -35,10 +35,10 @@ def index(request, inputPagination=None):
 
     # Generamos el diccionario (contexto en argot Django donde el template buscará las variables)
     contexto = {
-        "listaPelis": listaPelis,
-        "initialRange": initialRange,
-        "nextPage": nextPage,
-        "previousPage": previousPage,
+        "listaPelis":    listaPelis,
+        "initialRange":  initialRange,
+        "nextPage":      nextPage,
+        "previousPage":  previousPage,
     }
 
     return HttpResponse(template.render(contexto, request))

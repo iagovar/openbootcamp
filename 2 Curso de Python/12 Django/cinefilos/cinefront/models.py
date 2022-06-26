@@ -11,6 +11,10 @@ class Director(models.Model):
 
     def __str__(self):
         return self.nombre
+    
+    class Meta:
+        # Django tiene juicy magic que transforma nombres a plurales, pero lo hace en inglés.
+        verbose_name_plural = 'Directores'
 
 class Pelicula(models.Model):
     nombre      = models.CharField(max_length=512)

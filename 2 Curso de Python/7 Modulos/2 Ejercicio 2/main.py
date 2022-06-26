@@ -11,7 +11,7 @@ def main():
 	horaActual		= ahora.hour
 	minutoActual	= ahora.minute
 	horaDeSalida 	= 19
-	minutoDeSalida	= 60
+	minutoDeSalida	= 60 # 60 mins de la hora anterior, equivalentes a 00 de la actual
 
 	if horaActual >= horaDeSalida:
 
