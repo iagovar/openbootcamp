@@ -87,8 +87,30 @@ def director(request, directorId):
 
 def busqueda(request):
     """
-    No tengo muy claro aún pero apostaría por un campo
-    de búsqueda libre sobre todos los campos de los modelos,
-    pero esto es probable que no se pueda hacer en Django sin 
-    mucho consumo de recursos y sin complicarse la vida.
+    Busqueda simple
+
+    Usando: https://learndjango.com/tutorials/django-search-tutorial
     """
+
+    # Plantilla
+
+    template = loader.get_template('cinefront/busqueda.html')
+
+    # Obtenemos los parámetros del GET
+
+    tabla   = request.GET.get("tabla")
+    nombre  = request.GET.get("nombre")
+
+    # Consulta a la BD
+    if tabla == "pelicula":
+        listaBusqueda = Pelicula.objects.filter(nombre__icontains=nombre)
+    else:
+        listaBusqueda = Director.objects.filter(nombre__icontains=nombre)
+
+    # Contexto
+
+    contexto = {
+        "listaBusqueda": listaBusqueda,
+    }
+
+    return HttpResponse(template.render(contexto, request))

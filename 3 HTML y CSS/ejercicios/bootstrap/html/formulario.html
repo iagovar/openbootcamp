@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio de Formulario HTML</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div id="socialmedia-signin" class="my-5">
+			<button class="btn btn-outline-primary">
+				<picture></picture>
+				<img src="../img/google-logo.svg">
+				<span>Registrarse con Google</span>
+			</button>
+		</div>
+		<hr class="divider">
+		<div id="email-signin">
+			<form action="#" method="post">
+				<div class="row">
+					<div class="col-sm">
+						<label for="nombre" class="form-label">Nombre</label>
+						<input type="text" name="nombre" class="form-control">
+					</div>
+					<div class="col-sm">
+						<label for="pseudonimo" class="form-label">Pseudónimo</label>
+						<input type="text" name="pseudonimo" class="form-control">	
+					</div>
+				</div>
+
+				<!-- Elementos paralelos arriba, seguidos abajo -->
+				<label for="email" class="form-label">Email</label>
+				<input type="email" name="email" class="form-control">
+				<label for="password" class="form-label">Contraseña</label>
+				<input type="password" name="password" class="form-control" placeholder="8 o más caracteres">
+				<label for="terminos" class="form-label">Términos y condiciones bla bla bla</label>
+				<input type="checkbox" name="terminos" class="form-check-input">
+				<br>
+				<input type="submit" value="Enviar" class="btn btn-primary">
+
+
+			</form>
+		</div>
+	</div>
+</body>
+</html>

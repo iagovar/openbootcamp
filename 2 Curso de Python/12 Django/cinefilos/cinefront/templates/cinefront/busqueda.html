@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar en la BD</title>
+</head>
+<body>
+    <form action="/pelis/busqueda/" method="get">
+        <br><label for="tabla">Tabla donde buscar</label>
+        <br>
+        <br><input type="radio" name="tabla" id="pelicula" value="pelicula" checked>
+        <label for="pelicula">Película</label>
+        <br><input type="radio" name="tabla" id="director" value="director">
+        <label for="director">Director</label>
+        <br>
+        
+        <br><label for="nombre">Nombre</label>
+        <br><input type="text" name="nombre" id="nombre" placeholder="Cadena de texto" required>
+
+        <br><input type="submit" value="Buscar">
+        <br>
+        <br><input type="reset" value="Borrar todo">
+    </form>
+
+    {% if listaBusqueda %}
+        <ol>
+        ID en BD | Nombre | Director
+        {% for resultado in listaBusqueda %}
+            <li>{{resultado.id}} | {{resultado}} | {{resultado.director}}</li>
+        {% endfor %}
+        </ol>
+    {% endif %}
+
+
+</body>
+</html>
