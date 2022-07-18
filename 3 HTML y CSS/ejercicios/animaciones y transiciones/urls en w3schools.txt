@@ -1,0 +1,4 @@
+Nota: El ejercicio de tooltip del bootcamp no se corresponde con los vídeos.
+
+https://www.w3schools.com/cssref/css3_pr_transform.asp
+https://www.w3schools.com/css/css3_animations.asp

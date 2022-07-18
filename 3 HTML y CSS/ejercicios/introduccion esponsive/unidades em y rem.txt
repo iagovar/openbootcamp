@@ -1,0 +1,6 @@
+
+
+
+Em -> Referencia al tamaño de fuente de su contendor
+
+Rem -> Tamaño de fuente de la raíz.

@@ -1,0 +1,24 @@
+* {border: 1px solid red;}
+
+.container {
+    display: flex;
+}
+
+.main {flex-grow: 3;}
+.sidebar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 640px) {
+    * {
+        border: 1px solid black;
+    }
+    .container {
+        flex-direction: column-reverse;
+    }
+    .sidebar {
+        flex-direction: column;
+    }
+}

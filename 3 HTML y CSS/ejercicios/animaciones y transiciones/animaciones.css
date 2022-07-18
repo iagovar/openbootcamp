@@ -1,0 +1,38 @@
+.padre {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+.hijo {
+    width: 50%;
+    height: 50%;
+    background-color: beige;
+}
+
+.padre:hover .hijo {
+    animation: circular 500ms ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circular {
+    0% {
+        background-color: beige;
+        transform: translateX(0%);
+    }
+    25% {
+        background-color: blueviolet;
+        transform: translateX(100%);
+    }
+    50% {
+        background-color: brown;
+        transform: translate(100%, 100%)
+    }
+    75% {
+        background-color: chocolate;
+        transform: translateY(100%);
+    }
+    100% {
+        background-color: cornsilk;
+        transform: translateY(0%);
+    }
+}
