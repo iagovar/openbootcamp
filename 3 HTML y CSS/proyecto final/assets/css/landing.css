@@ -1,6 +1,10 @@
 body {
   background-color: #F1FAEE;
 }
+body > div > div.container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 
 nav {
   background-color: #1D3557;
@@ -28,6 +32,7 @@ nav {
 }
 .call-to-action .col-sm {
   text-align: center;
+  margin: 0.5em 0;
 }
 
 .footer {
@@ -35,7 +40,6 @@ nav {
   min-height: 33vh;
 }
 .footer .footer-column {
-  margin: 2em 0 0 8vw;
   display: flex;
   flex-direction: column;
 }
@@ -44,6 +48,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2em;
 }
 .claim-item img {
   max-width: 100px;
