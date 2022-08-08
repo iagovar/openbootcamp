@@ -1,0 +1,71 @@
+// Paleta de colores customizada de:
+// https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557
+
+
+// Variables de color
+$rojo: #E63946;
+$blanquito: #F1FAEE;
+$azul-clarito: #A8DADC;
+$azul-medio: #457B9D;
+$azul-oscuro: #1D3557;
+$amarillo-claro: #FFEFBD;
+
+body {
+    background-color: $blanquito;
+}
+
+nav {
+    background-color: $azul-oscuro;
+}
+
+.features {
+    min-height: 66vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefits {
+    background-color: $azul-clarito;
+    min-height: 66vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call-to-action {
+    min-height: 33vh;
+    display: flex;
+    align-items: center;
+
+    .col-sm {
+        text-align: center;
+    }
+}
+
+.footer {
+    background-color: $amarillo-claro;
+    min-height: 33vh;
+
+    .footer-column {
+        margin: 2em 0 0 8vw;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.claim-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        max-width: 100px;
+        margin-bottom: 1em;
+    }
+}
+
+.claim-text {
+    text-align: justify;
+    margin-top: 3vh;
+}

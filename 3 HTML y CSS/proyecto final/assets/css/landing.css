@@ -1,0 +1,58 @@
+body {
+  background-color: #F1FAEE;
+}
+
+nav {
+  background-color: #1D3557;
+}
+
+.features {
+  min-height: 66vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.benefits {
+  background-color: #A8DADC;
+  min-height: 66vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.call-to-action {
+  min-height: 33vh;
+  display: flex;
+  align-items: center;
+}
+.call-to-action .col-sm {
+  text-align: center;
+}
+
+.footer {
+  background-color: #FFEFBD;
+  min-height: 33vh;
+}
+.footer .footer-column {
+  margin: 2em 0 0 8vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.claim-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.claim-item img {
+  max-width: 100px;
+  margin-bottom: 1em;
+}
+
+.claim-text {
+  text-align: justify;
+  margin-top: 3vh;
+}
+
+/*# sourceMappingURL=landing.css.map */
