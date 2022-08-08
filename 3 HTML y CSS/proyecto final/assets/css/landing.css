@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #F1FAEE;
 }
@@ -33,6 +34,12 @@ nav {
 .call-to-action .col-sm {
   text-align: center;
   margin: 0.5em 0;
+}
+.call-to-action .registrate::before {
+  content: "☑ ";
+}
+.call-to-action .descarga::before {
+  content: "🡃 ";
 }
 
 .footer {
