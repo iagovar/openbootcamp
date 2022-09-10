@@ -12,14 +12,14 @@ Cuando existen dos selectores apuntando a un mismo elemento, ¿Cómo se decide q
 
 ## Estructura de prioridad en CSS (Especificidad)
 
-			Selector 							Puntuación
+Selector 							Puntuación
 
-			!Important							Total -> No se computa, simplemente se fuerza
-			Inline								1000
-			IDs									100
-			Clases, pseudo-clases, atributos	10
-			Elementos y pseudo-elementos		1
-			*									0
+!Important							Total -> No se computa, simplemente se fuerza
+Inline								1000
+IDs									100
+Clases, pseudo-clases, atributos	10
+Elementos y pseudo-elementos		1
+*									0
 
 
 Anidaciones como >, +, etc pueden hacer un elector más específico, pero no añaden puntuación.

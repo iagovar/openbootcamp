@@ -7,7 +7,7 @@
 - Polimorfismo: Objetos de diferentes clases pueden ser accedidos utilizando el mismo interfaz, mostrando un comportamiento distinto (tomando diferentes formas) según cómo sean accedidos.
 
 	### Ejemplo de polimorfismo
-	````
+    ````
 	class Coche():
 		def mostrarRuedas(self):
 			print("Un coche tiene cuatro ruedas")
@@ -28,10 +28,11 @@
 	# Salida de la consola
 
 	Un coche tiene cuatro ruedas
-	````
+    ````
 
+	En el ejemplo, si instanciamos la variable ``miVehiculo`` sobre la clase ``Coche()`` y usamos la interfaz ``cuantasRuedasTiene()`` obtendremos una cadena de texto diferente a si instanciamos sobre ``Moto()``
 
-
+	En Python el polimorfismo es muy sencillo, ya que no hay clases públicas, privadas, restringidas, etc, como en Java.
 
 - Encapsulamiento: La práctica de esconder o restringir el acceso de los métodos o variables de una clase desde el exterior (fuera de su *scope*). En Python se hace por convención con ``_variable`` o con ``__variable`` vía *name mangling* (ver variables privadas).
 
@@ -39,7 +40,7 @@
 
 - ``_variable``: Las variables escritas con un guión delante **no deberían modificarse desde fuera de la clase**. Deberíamos usar, o definir, un método dentro de la clase para consultar o modificar su estado. Esto se puede hacer con los típicos métodos *get* y *set* que ya vimos en Java.
 
-	Existe un método para emular la privacidad de un método o atributo llamado *name mangling*. Al escribir dos guiones en lugar de uno, como en ``__atributo`` python cambiará automáticamente el nombre por ``_nombreDeClase_atributo``, de modo que al acceder por ``__atributo`` mostrará un error, aunque no sucederá al acceder por ``_nombreDeClase_atributo``.
+	Existe una forma para emular la privacidad de un método o atributo llamado *name mangling*. Al escribir dos guiones en lugar de uno, como en ``__atributo`` python cambiará automáticamente el nombre por ``_nombreDeClase_atributo``, de modo que al acceder por ``__atributo`` mostrará un error, aunque no sucederá al acceder por ``_nombreDeClase_atributo``.
 
 # Clases estáticas VS Clases dinámicas
 
