@@ -7,5 +7,7 @@
 **__pycache__
 *.pyc
 *.pyo
+
+# Movidas de github que no debería estar aquí
 github-autentication-ssh-key
 github-autentication-ssh-key.pub
