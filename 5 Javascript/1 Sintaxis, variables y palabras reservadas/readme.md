@@ -135,3 +135,7 @@ Similar a Python, con las siguientes diferencias:
 	// Cuerpo de la estructura de control
 	};
 	````
+
+## Recursos
+
+- [Javascript.info](https://javascript.info/types)
