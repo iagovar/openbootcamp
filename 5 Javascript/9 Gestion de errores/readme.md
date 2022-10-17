@@ -1,3 +1,7 @@
+# Gestión de errores con throw, try, catch, etc
+
+Ver el archivo throw-try-catch.js
+
 # Gestionar logs en nodejs
 
 - Creamos el proyecto de node con `npm init -y`.
