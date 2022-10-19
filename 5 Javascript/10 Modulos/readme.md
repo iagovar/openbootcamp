@@ -43,6 +43,15 @@ Luego se puede importar de las siguientes maneras:
 Para usar el siguiente método de importación `import miNombre from './modules/literatura.js'`es necesario usar el formato de *export default* con `export default miNombre`.
 
 Sólo puede haber un *default* export por módulo.
+
+## Importar de librerías NPM
+
+1. Es necesario inicializar con `npm init -y` en desde donde se va a importar.
+2. Es necesario indicar `"type": "module",` en el *package.json* resultado del comando anterior.
+3. En NPM viene tanto el método de instalación como código de ejemplo para cada librería.
+4. Con los pasos aquí descritos lo normal es que el método de importación sea ES6
+
+
 ## Referencias:
 
 https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Modules
