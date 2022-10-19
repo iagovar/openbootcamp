@@ -14,7 +14,8 @@ console.log(listaDeCompra)
 
 // Vuelve a modificar la lista de la compra eliminando "Aceite de Girasol"
 
-listaDeCompra.pop()
+let indexNecesario = listaDeCompra.indexOf("Aceite de Girasol")
+listaDeCompra.splice(indexNecesario, 1)
 
 console.log(listaDeCompra)
 
@@ -32,7 +33,7 @@ let nuevaLista2010 = listaDePeliculas.filter(comprobarFecha)
 
 function comprobarFecha(elemento) {
     let fecha = new Date(elemento.fecha).getFullYear();
-    return fecha > 2010;
+    return fecha > 2010; // Se ejecuta la condición sin necesidad de un IF
 }
 
 console.log(nuevaLista2010)

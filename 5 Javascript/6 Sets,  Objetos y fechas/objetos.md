@@ -1,0 +1,1 @@
+Ver [este artículo](https://iagovar.com/javascript/objetos-javascript-vs-python-diccionarios) que escribí en mi blog.

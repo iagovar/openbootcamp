@@ -2,6 +2,7 @@
 
 
 const array = ["hola", 1,2,3, true, null, "adios"]
+array.propiedadPersonalizada = "Esto es una propiedad personalziada";
 
 
 for (valor of array) {

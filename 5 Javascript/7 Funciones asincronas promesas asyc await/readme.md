@@ -1,0 +1,1 @@
+Ver [el artículo de mi blog](https://iagovar.com/javascript/javascript-funciones-asincronas) o el [JSitor](https://jsitor.com/C6gQBmIMN)
