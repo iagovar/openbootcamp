@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web con Javascript</title>
+</head>
+<body>
+    <style type="text/css">
+        body {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+
+    <!-- Probando bind() -->
+
+    <script src="./bind.js"></script>   
+
+    <!-- Ejemplo de formulario para eventos -->
+    <hr>
+
+    <h3>Formulario de prueba para eventos</h3>
+
+    <form action="#" method="post" id="miFormulario">
+        <input type="texto" name="nombre" placeholder="Tu nombre">
+        <input type="submit" value="Enviar" name="enviar">
+    </form>
+
+    <script src="./formulario.js"></script>
+
+    <!-- Ejemplo de eventos personalziados -->
+    <hr>
+
+    <h2 id="h-texto">Esto es un header H2</h2>
+
+    <p>Llamar a <code>cambiarTexto("string", "color")</code> cambiará el header.</p>
+
+    <button id="botonRojo">Poner en Rojo</button>
+    <button id="botonAzul">Poner en Azul</button>
+
+    <script src="./customEvents.js"></script>
+
+    <!-- Probando JQuery -->
+    <hr>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+
+    <h3 id="contador">Contador JQuery</h3>
+
+    <button class="anadir">Añadir +1</button>
+    <button class="restar">Restar -1</button>
+
+    <script src="./mijquery.js"></script>
+
+    <!-- Probando alertas y diálogos en pantalla-->
+    <hr>
+
+    <button id="botonAlerta">Alerta</button>
+    <button id="botonConfirm">Confirmar</button>
+    <button id="botonInfo">Más información</button>
+
+    <script src="./alertasydialogos.js"></script>
+
+    
+</body>
+</html>
