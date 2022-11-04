@@ -28,7 +28,9 @@ botonConfirm.addEventListener("click", () => {
 const botonInfo = document.querySelector("#botonInfo")
 
 botonInfo.addEventListener("click", () => {
-    alert("Este es un mensaje de alerta")
+    miPrompt = prompt("Se imprimirá en consola lo que escribas")
+
+    console.log(miPrompt)
 })
 
 
