@@ -14,5 +14,6 @@
 
 ### Videos
 
+- Cómo funciona el event bubbling: [Youtube](https://www.youtube.com/watch?v=xlci1S08Cww)
 - Overview de eventos: [Youtube](https://www.youtube.com/watch?v=YiOlaiscqDY)
 - Eventos personalizados: [Youtube](https://www.youtube.com/watch?v=b469-2H9Rew)

@@ -1,0 +1,30 @@
+.section {
+    background-color: whitesmoke;
+    padding: 1em;
+    margin: 1em;
+}
+
+.tarjeta {
+    background-color: black;
+    color: blanchedalmond;
+    margin: 1em;
+    padding: 1em;
+}
+
+.borde-rojo {border: 3px solid red;}
+
+#papelera {
+    height: 7vh;
+    border: 2px solid brown;
+    color: white;
+    padding: 1em;
+    margin: 5vh 1em;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSMWeEC0tULzOjfWFAOdOHjUw9WjXhBDbirg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#papelera img {
+    max-width: 10vw;
+    max-height: 10vw;
+}
