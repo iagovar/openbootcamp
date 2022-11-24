@@ -11,3 +11,11 @@
 # Movidas de github que no debería estar aquí
 github-autentication-ssh-key
 github-autentication-ssh-key.pub
+
+# .git del repo de Gitea en ./6 Control de Versiones/0 Gitea
+
+./6 Control de versiones/1 Gitea/.git
+
+# Otros archivos
+
+*.api
