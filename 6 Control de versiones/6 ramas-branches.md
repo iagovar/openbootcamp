@@ -40,6 +40,8 @@ También es posible crear una rama de otra rama. Simplemente haciendo chechout a
 
 ## Cuańdo usar merge y cuándo rebase
 
+tl:dr > Rebase en local y merge en remoto
+
 Aunque el [post del blog](https://iagovar.com/git/git-merge-rebase) contiene mucha información al respecto, resumidamente se puede decir que, salvo acuerdo previo con el resto del equipo (de haberlo), es preferible usar `git rebase` sólo para incorporar los cambios de *origin master* en la rama feature local.
 
 Es decir, ejecutar un `git pull` desde *local master*, y luego un `git rebase master` desde la rama *local feature* sobre la que estemos trabajando.
