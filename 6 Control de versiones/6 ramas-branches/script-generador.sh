@@ -1,3 +1,7 @@
+###############
+# Rama MASTER #
+###############
+
 # Crear un directorio llamado "practica-git"
 mkdir practica-git
 
@@ -22,6 +26,10 @@ for ((i=0; i<10; i++)); do
   git commit -m "Commit en MASTER número $i"
 done
 
+################
+# Rama FEATURE #
+################
+
 # Crear una rama llamada "feature" a partir del segundo commit de la rama "master"
 git branch feature HEAD~8
 
@@ -45,3 +53,32 @@ done
 
 # Volvemos a la rama main
 git checkout master
+
+################
+#  Rama SHORT  #
+################
+
+# Creamos una rama con menos commits que head (short)
+git branch short HEAD~7
+
+# Cambiamos a la rama "short"
+git checkout short
+
+# Crear un archivo llamado "short.txt" en el directorio "practica-git"
+touch short.txt
+
+# Realizar 4 commits sobre el archivo "short.txt" en la rama "short"
+for ((i=0; i<4; i++)); do
+  # Modificar el archivo "short.txt"
+  echo "Commit en SHORT número $i" >> short.txt
+
+  # Añadir el archivo al staging area
+  git add short.txt
+
+  # Realizar el commit
+  git commit -m "Commit en SHORT número $i"
+done
+
+# Volvemos a la rama main
+git checkout master
+

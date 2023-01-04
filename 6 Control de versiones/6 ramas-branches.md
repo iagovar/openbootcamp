@@ -1,6 +1,8 @@
-# Ramas - branches
+# Ramas - Branches
 
 Se usan para tener múltiples versiones de desarollo y/o modificaciones sin modificar el master.
+
+**nota**: Hay un directorio que contiene diagramas en SVG explicando los procesos.
 
 ## Ver, crear y cambiar a ramas
 
@@ -31,13 +33,17 @@ También es posible crear una rama de otra rama. Simplemente haciendo chechout a
 
 - Explicado en el blog: [Enlace](https://iagovar.com/git/git-merge-rebase)
 
-## rebase
+## Rebase
 
 - Explicado en el blog: [Enlace](https://iagovar.com/git/git-merge-rebase)
 
 ## Cuańdo usar merge y cuándo rebase
 
-- Merge para origin y rebase en local?
+Aunque el [post del blog](https://iagovar.com/git/git-merge-rebase) contiene mucha información al respecto, resumidamente se puede decir que, salvo acuerdo previo con el resto del equipo (de haberlo), es preferible usar `git rebase` sólo para incorporar los cambios de *origin master* en la rama feature local.
+
+Es decir, ejecutar un `git pull` desde *local master*, y luego un `git rebase master` desde la rama *local feature* sobre la que estemos trabajando.
+
+Para incorporar los cambios en la rama *local master* y luego subirlos al remoto, es preferible usar un `git mere` por el simple hecho de que aunque el historial de confirmaciones pueda estar más sucio, y luego un `git bisect` se pueda complicar, es también más transparente y no se esconde nada.
 
 ## Más información
 
