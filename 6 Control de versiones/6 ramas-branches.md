@@ -20,9 +20,10 @@ Se usan para tener múltiples versiones de desarollo y/o modificaciones sin modi
 
 - `git pull origin [nombreDeLaRama]`				-> Obtener una rama del repo remoto
 
----
+
+
 También es posible crear una rama de otra rama. Simplemente haciendo chechout a la rama padre y haciendo el branch desde ahí.
----
+
 
 # Unificación de cambios - merge y rebase
 
