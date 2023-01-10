@@ -1,0 +1,1 @@
+Sería redundante tratar este tema aquí cuando [git workflows ya tiene un artículo dedidcado en mi blog](https://iagovar.com/git/git-workflows).
