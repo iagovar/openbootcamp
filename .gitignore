@@ -16,6 +16,9 @@ github-autentication-ssh-key.pub
 
 ./6 Control de versiones/1 Gitea/.git
 
+# Directorio de prueba de repos en /6 ramas-branches/practica-git/
+/6 ramas-branches/practica-git/
+
 # Otros archivos
 
 *.api

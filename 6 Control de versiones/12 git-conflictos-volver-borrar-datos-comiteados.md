@@ -1,0 +1,1 @@
+Para la gestión de conflictos, volver a un punto anterior del historial o borrar datos, he escrito [este artículo](https://iagovar.com/git/git-conflictos) en el blog.
