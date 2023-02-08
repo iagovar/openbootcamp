@@ -1,0 +1,1 @@
+En general, todo lo perteneciente al curso de Java lo estoy poniendo en mi blog, en la [categoría de Java](https://iagovar.com/java/).

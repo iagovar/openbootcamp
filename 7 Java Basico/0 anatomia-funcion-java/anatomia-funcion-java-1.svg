@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="177.58986mm"
+   height="97.378197mm"
+   viewBox="0 0 177.58986 97.378197"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="80.823357"
+       y="88.892021"
+       width="273.17545"
+       height="175.35376"
+       id="rect25667" />
+    <rect
+       x="81.673843"
+       y="87.999504"
+       width="357.87479"
+       height="116.33218"
+       id="rect24297" />
+    <rect
+       x="80.823357"
+       y="88.892021"
+       width="231.80678"
+       height="172.2439"
+       id="rect25667-3" />
+    <rect
+       x="80.823357"
+       y="88.892021"
+       width="283.77322"
+       height="169.26395"
+       id="rect25667-3-7" />
+    <rect
+       x="80.823357"
+       y="88.892021"
+       width="283.77322"
+       height="169.26395"
+       id="rect25667-3-7-7" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-18.608285,-11.191273)">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#800080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 80.380221,74.893677 162.6635,63.826605"
+       id="path80854" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 108.58683,63.739108 60.760432,74.88829"
+       id="path80601" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="20.082451"
+       y="19.655846"
+       id="text1287"><tspan
+         id="tspan1285"
+         style="stroke-width:0.264583"
+         x="20.082451"
+         y="19.655846">Anatomía de una función en Java</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.92743px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.173186"
+       x="19.63682"
+       y="72.802551"
+       id="text4309"><tspan
+         id="tspan4307"
+         style="stroke-width:0.173186"
+         x="19.63682"
+         y="72.802551"><tspan
+   style="fill:#ff0000"
+   id="tspan6037">public</tspan> class MyClass {</tspan><tspan
+         style="stroke-width:0.173186"
+         x="19.63682"
+         y="81.461838"
+         id="tspan4311">    <tspan
+   style="fill:#ff0000"
+   id="tspan12391">public</tspan> <tspan
+   style="fill:#000080"
+   id="tspan13479">static</tspan> <tspan
+   style="fill:#800080"
+   id="tspan14309">void</tspan> myMethod(<tspan
+   style="fill:#800080"
+   id="tspan23003">int</tspan> myArgument) {</tspan><tspan
+         style="stroke-width:0.173186"
+         x="19.63682"
+         y="90.121124"
+         id="tspan4313">        // cuerpo del método</tspan><tspan
+         style="stroke-width:0.173186"
+         x="19.63682"
+         y="98.780411"
+         id="tspan4315">    }</tspan><tspan
+         style="stroke-width:0.173186"
+         x="19.63682"
+         y="107.4397"
+         id="tspan4317">}</tspan><tspan
+         style="stroke-width:0.173186"
+         x="19.63682"
+         y="116.09899"
+         id="tspan4319" /></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text24295"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect24297);fill:#000000;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.21954884,0,0,0.21954884,1.5784529,7.2755831)"
+       id="text25665"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect25667);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="80.824219"
+         y="99.509766"
+         id="tspan3911"><tspan
+   style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold';fill:#ff0000"
+   id="tspan3909">public</tspan>: indica que el método o clase es </tspan><tspan
+         x="80.824219"
+         y="114.50977"
+         id="tspan3913">público y puede ser accedido desde </tspan><tspan
+         x="80.824219"
+         y="129.50977"
+         id="tspan3915">cualquier parte del código.
+</tspan><tspan
+         x="80.824219"
+         y="144.50977"
+         id="tspan3917">
+</tspan><tspan
+         x="80.824219"
+         y="159.50977"
+         id="tspan3921"><tspan
+   style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold';fill:#ff0000"
+   id="tspan3919">private</tspan>: indica que el método o clase es </tspan><tspan
+         x="80.824219"
+         y="174.50977"
+         id="tspan3923">privado y sólo puede ser accedido desde la </tspan><tspan
+         x="80.824219"
+         y="189.50977"
+         id="tspan3925">clase en la que se define.
+</tspan><tspan
+         x="80.824219"
+         y="204.50977"
+         id="tspan3927">
+</tspan><tspan
+         x="80.824219"
+         y="219.50977"
+         id="tspan3931"><tspan
+   style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold';fill:#ff0000"
+   id="tspan3929">protected</tspan>: indica que el método o clase es </tspan><tspan
+         x="80.824219"
+         y="234.50977"
+         id="tspan3933">protegido y sólo puede ser accedido desde la </tspan><tspan
+         x="80.824219"
+         y="249.50977"
+         id="tspan3935">clase en la que se define y sus clases hijas.</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.21954884,0,0,0.21954884,63.422202,7.0365117)"
+       id="text25665-6"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect25667-3);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="80.824219"
+         y="99.509766"
+         id="tspan3939"><tspan
+   style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold';fill:#000080"
+   id="tspan3937">static</tspan>: Indica que no es necesario </tspan><tspan
+         x="80.824219"
+         y="114.50977"
+         id="tspan3941">instanciar el método para acceder a </tspan><tspan
+         x="80.824219"
+         y="129.50977"
+         id="tspan3943">él.
+</tspan><tspan
+         x="80.824219"
+         y="144.50977"
+         id="tspan3945">
+</tspan><tspan
+         x="80.824219"
+         y="159.50977"
+         id="tspan3947">Se puede llamar instanciándolo, pero </tspan><tspan
+         x="80.824219"
+         y="174.50977"
+         id="tspan3949">la gracia de hacer un método estático </tspan><tspan
+         x="80.824219"
+         y="189.50977"
+         id="tspan3951">es que no es necesario hacerlo.
+</tspan><tspan
+         x="80.824219"
+         y="204.50977"
+         id="tspan3953">
+</tspan><tspan
+         x="80.824219"
+         y="219.50977"
+         id="tspan3955">No hay una palabra clave para </tspan><tspan
+         x="80.824219"
+         y="234.50977"
+         id="tspan3957">métodos no-estáticos, a los que sólo </tspan><tspan
+         x="80.824219"
+         y="249.50977"
+         id="tspan3959">se puede acceder instanciando.</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.21954884,0,0,0.21954884,116.8073,7.1491535)"
+       id="text25665-6-5"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect25667-3-7);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="80.824219"
+         y="99.509766"
+         id="tspan3963"><tspan
+   style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold';fill:#800080"
+   id="tspan3961">void</tspan>: Indica que la función no devuelve nada. 
+</tspan><tspan
+         x="80.824219"
+         y="114.50977"
+         id="tspan3965">
+</tspan><tspan
+         x="80.824219"
+         y="129.50977"
+         id="tspan3967">En las funciones de java es obligatorio indicar </tspan><tspan
+         x="80.824219"
+         y="144.50977"
+         id="tspan3969">al compilador qué tipo de dato se va a </tspan><tspan
+         x="80.824219"
+         y="159.50977"
+         id="tspan3971">retornar, sin importar que sean tipos </tspan><tspan
+         x="80.824219"
+         y="174.50977"
+         id="tspan3973">primitivos (como int, float, chat) o no (int[], la </tspan><tspan
+         x="80.824219"
+         y="189.50977"
+         id="tspan3975">instancia de una clase, etc)
+</tspan><tspan
+         x="80.824219"
+         y="204.50977"
+         id="tspan3977">
+</tspan><tspan
+         x="80.824219"
+         y="219.50977"
+         id="tspan3979">Si no es especifica, o si el dato retornado por </tspan><tspan
+         x="80.824219"
+         y="234.50977"
+         id="tspan3983"><tspan
+   style="font-style:italic;-inkscape-font-specification:'sans-serif Italic'"
+   id="tspan3981">return</tspan> no coincide con el declarado, el </tspan><tspan
+         x="80.824219"
+         y="249.50977"
+         id="tspan3985">compilador mostrará un error.</tspan></text>
+    <rect
+       style="fill:none;stroke:#800080;stroke-width:0.25509;stroke-opacity:1"
+       id="rect77261"
+       width="62.81691"
+       height="39.212795"
+       x="133.25369"
+       y="24.592539" />
+    <rect
+       style="fill:none;stroke:#000080;stroke-width:0.232621;stroke-opacity:1"
+       id="rect77261-5"
+       width="52.208168"
+       height="39.235252"
+       x="80.189308"
+       y="24.58131" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.250783;stroke-opacity:1"
+       id="rect77261-5-6"
+       width="60.706219"
+       height="39.217098"
+       x="18.733677"
+       y="24.590555"
+       ry="0" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.248511;stroke-opacity:1"
+       id="rect77261-5-6-2"
+       width="21.69244"
+       height="8.6562767"
+       x="19.188236"
+       y="66.473625"
+       ry="0" />
+    <rect
+       style="fill:none;stroke:#000080;stroke-width:0.248511;stroke-opacity:1"
+       id="rect77261-5-6-2-9"
+       width="21.69244"
+       height="8.6562767"
+       x="50.085884"
+       y="74.871216"
+       ry="0" />
+    <rect
+       style="fill:none;stroke:#800080;stroke-width:0.24905;stroke-opacity:1"
+       id="rect77261-5-6-2-1"
+       width="15.957488"
+       height="8.6559496"
+       x="72.184402"
+       y="74.883484"
+       ry="0" />
+    <rect
+       style="fill:none;stroke:#800080;stroke-width:0.194902;stroke-opacity:1"
+       id="rect77261-5-6-2-1-2"
+       width="9.7120981"
+       height="8.7100983"
+       x="128.89417"
+       y="74.856445"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.86474px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0466186"
+       x="19.894468"
+       y="22.247969"
+       id="text80003"><tspan
+         id="tspan80001"
+         style="stroke-width:0.0466186"
+         x="19.894468"
+         y="22.247969">iagovar.com</tspan></text>
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 52.784192,63.814484 29.936951,66.477519"
+       id="path80438" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.21954884,0,0,0.21954884,112.47207,71.180169)"
+       id="text25665-6-5-0"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect25667-3-7-7);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="80.824219"
+         y="99.509766"
+         id="tspan3987">En java siempre hay que declarar el tipo de </tspan><tspan
+         x="80.824219"
+         y="114.50977"
+         id="tspan3989">dato que es cada argumento en la función</tspan></text>
+    <rect
+       style="fill:none;stroke:#800080;stroke-width:0.134854;stroke-opacity:1"
+       id="rect77261-9"
+       width="64.137169"
+       height="10.733147"
+       x="128.8584"
+       y="88.563446" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#800080;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 133.82372,83.547912 -0.002,4.989224"
+       id="path81876" />
+  </g>
+</svg>
