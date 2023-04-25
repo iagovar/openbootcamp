@@ -89,8 +89,7 @@ public class Main {
         System.out.println("El estado general de conexión es: " + myWatch.getConnected());
 
         // Vamos a encender el modo de carga
-        System.out.println("Vamos a encender el modo de carga: " + myWatch.setCharging(true));
-        ));
+        System.out.println("Vamos a encender el modo de carga: " + myWatch.setCharging(true));;
 
     }
 
